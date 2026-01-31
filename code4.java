@@ -1,10 +1,19 @@
-public class code4 {
-    public static int print(){
-        return 0;
+class Animal{
+    void sound(){
+        System.out.println("hello");
     }
+}
+class Dog extends Animal{
+    @Override
+    void sound(){
+        System.out.println("hi");
+    }
+}
+class code4 {
     public static void main(String[] args) {
-        int res=print();
-        System.out.println(res);
+        Dog d1 = new Dog();
+        Animal a1=new Animal();
+        d1.sound();
+        a1.sound();
     }
-    }
-
+}

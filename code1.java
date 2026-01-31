@@ -1,9 +1,20 @@
-public class code1 {
-    public static void add(int x,int y){
-        int ans=x+y;
-        System.out.println(ans);
-    }
-    public static void main(String[] args) {
-        add(20,30);
+class Animal{
+    void show(){
+        System.out.println("cat");
     }
 }
+    class Dog extends Animal{
+        void bark(){
+            System.out.println("bark");
+
+        }
+
+    }
+class code1{
+    public static void main(String[] args) {
+        Dog dg=new Dog();
+        dg.bark();
+        dg.show();
+    }
+}
+

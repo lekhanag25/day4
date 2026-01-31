@@ -1,13 +1,18 @@
-class Car{
-    String color;
-    void run(){
-        System.out.println("running");
+abstract class Shape{
+    abstract void draw();
+    void message(){
+        System.out.println("Hello");
     }
 }
-public class code7{
+class Circle extends Shape{
+    void draw(){
+        System.out.println("drawing");
+    }
+}
+class code7{
     public static void main(String[] args) {
-        Car RR = new Car();
-        RR.color="red";
-        RR.run();
+        Circle c1=new Circle();
+        c1.draw();
+        c1.message();
     }
 }
